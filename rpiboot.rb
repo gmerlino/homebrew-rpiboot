@@ -30,7 +30,7 @@ index 6d8dc6a..0a3d4e7 100755
 --- Makefile.orig
 +++ Makefile
 @@ -1,5 +1,5 @@
- rpiboot: main.c msd/bootcode.h msd/start.h
+ rpiboot: main.c msd/bootcode.h msd/start.h msd/bootcode4.h msd/start4.h
 -	$(CC) -Wall -Wextra -g -o $@ $< -lusb-1.0
 +	$(CC) -Wall -Wextra -g -o $@ $< $(CFLAGS) $(LDFLAGS)
 
